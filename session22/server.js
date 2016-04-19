@@ -1,8 +1,6 @@
 var http = require('http');
 
-var port = process.env.PORT;  // ports 8081 or 8082 work on c9 as well
-
-http.createServer( onRequest ).listen( port );  
+http.createServer( onRequest ).listen( 8081 );  // ports 8081, 8082 work for both local and c9
 
 
 function onRequest( request, response ) {

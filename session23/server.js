@@ -90,4 +90,4 @@ function onRequest(req,res) {
 // recap slides:  https://docs.google.com/presentation/d/1WJi91dwFPPxsg-1zXLjdAGVD0hgG4jR84906KiwYi84/edit?usp=sharing
 
 
-// send requests to this server by pointing to:  https://meetup-backend-lcarbonaro.c9users.io:8081/
+// send requests to this server by pointing to:  http://meetup-backend-lcarbonaro.c9users.io:8081/
