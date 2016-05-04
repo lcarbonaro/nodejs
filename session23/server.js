@@ -56,7 +56,7 @@ function onRequest(req,res) {
             break;
             
         case '/client':
-            var parms = url.parse(req.url,true).query;
+             var parms = url.parse(req.url,true).query;
             
             // find the particular client using JavaScript filter()
             var client = dataClients.filter( function(c) { return c.id == parms.id; } );
