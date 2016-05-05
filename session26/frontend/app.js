@@ -20,7 +20,7 @@ $(document).ready(function() {
         var category = $('#selCategory').val(),
             amount   = $('#txtAmount').val();
         $.get('http://meetup-backend.lcarbonaro.c9users.io:8081/expense', {"amount":amount, "category":category} , function(resp){
-            console.log(resp);
+            $('#msg').text('Expense record saved').fadeIn(1500).fadeOut(2500);
         });
     }
     
@@ -28,9 +28,9 @@ $(document).ready(function() {
     function getSummary() {
         $.get('http://meetup-backend.lcarbonaro.c9users.io:8081/summary', function(resp){
             var data = JSON.parse(resp);
-            $('div').html('');
+            $('div').html('<ul></ul>');
             data.forEach( function(c) {
-                $('div').append('<p>'+c.name+': '+c.total+'</p>');
+                $('div ul').append('<li>' + c.name + ': $' + (c.total===null ? 0 : c.total) + '</li>');
             });
         });
     }
