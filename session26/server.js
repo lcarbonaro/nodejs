@@ -40,8 +40,8 @@ function onRequest(req,res) {
             var parms = url.parse(req.url,true).query,
                 setFlds = {
                     date: new Date(),
-                    amount: parms.amount,
-                    categoryId: parms.category
+                    amount: parseFloat(parms.amount),
+                    categoryId: parseInt(parms.category)
                 };
             
             sql = 'insert into `expense` set ?';
@@ -50,7 +50,7 @@ function onRequest(req,res) {
                 if (err) {
                     console.error('expense sql error: ' + err.stack);
                 } else {
-                    res.write( JSON.stringify(result) );
+                    res.write( JSON.stringify({"insertId":result.insertId}) );
                     res.end();
                 }
             });
