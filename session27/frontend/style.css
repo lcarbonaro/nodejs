@@ -1,0 +1,10 @@
+div, button, select, input, span {
+    font-size: 2em;
+    font-family: Verdana;
+}
+
+#msg {
+	margin-left: 15px;
+	color: blue;
+}
+

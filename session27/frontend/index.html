@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>NodeJS & MySQL</title>
+       
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" type="text/css" />
+
+    </head>
+    <body>
+
+        <select id="selCategory">
+            <!-- options wil be added dynamically from database via ajax call -->
+        </select>
+        
+        <input type="text" id="txtAmount" />
+        <button id="btnExpense">Add Expense</button><span id="msg"></span> 
+        
+        <hr/>
+        
+        <button id="btnSummary">Show Summary</button>
+
+        <div></div>
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="app.js"></script>
+    </body>
+</html>
