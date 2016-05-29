@@ -38,11 +38,11 @@ function onRequest(req,res) {
         case '/expense':
             var parms = url.parse(req.url,true).query;
             
-            var setFlds = {
+            var expRec = {
                 amount: parseFloat(parms.amount)
             };
             
-            mdb.collection('category').update({ "_id": new ObjectID(parms.category) }, { "$pushAll": { "expenses" : [setFlds] } }, function(err,result){
+            mdb.collection('category').update({ "_id": new ObjectID(parms.category) }, { "$push": { "expenses" : expRec } }, function(err,result){
                 if (err) throw err;
                 res.write(JSON.stringify(result));
                 res.end();    
