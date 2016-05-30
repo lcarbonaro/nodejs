@@ -1,0 +1,17 @@
+[
+{
+    "name": "Joe",
+    "major":"Comp",
+    "grades": [90, 80, 40]
+}, 
+{
+    "name": "Jane",
+    "major":"Physics",
+    "grades": [90, 80, 40]
+}, 
+{
+    "name": "Tom",
+    "major":"Admin",
+    "grades": [90, 80, 40]
+}
+]

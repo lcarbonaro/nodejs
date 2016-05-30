@@ -39,7 +39,7 @@ function onRequest(req,res) {
             var parms = url.parse(req.url,true).query;
             
             var expRec = {
-                amount: parseFloat(parms.amount)
+                "amount": parseFloat(parms.amount)
             };
             
             mdb.collection('category').update({ "_id": new ObjectID(parms.category) }, { "$push": { "expenses" : expRec } }, function(err,result){
@@ -63,10 +63,9 @@ function onRequest(req,res) {
                 },
                 { 
                     $group: { 
-                        "_id" : "$_id",
-                        "name": { "$addToSet" : "$name" }, 
-                        "total" : { "$sum" : "$expenses.amount" } 
-                    } 
+                        "_id": "$name", 
+                        "total": { "$sum": "$expenses.amount" } 
+                    }  
                 }
             ] , function(err,docs) {
                 
