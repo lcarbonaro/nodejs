@@ -27,7 +27,7 @@ function handleRequest(req,res) {
                 //res.write('db conn ok');
                 //res.end();
                 
-                db.collection('student').find( {} , {"name":1,"_id":0}).toArray(function(err,docs) {
+                db.collection('student').find( {} , {"name":1, "major":1, "_id":0} ).sort({"name":1}).toArray(function(err,docs) {
                     if (err) throw err;
                     res.write(JSON.stringify(docs));
                     res.end();    
