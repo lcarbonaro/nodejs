@@ -23,9 +23,6 @@ function handleRequest(req,res) {
             
             mongodb.connect("mongodb://" + dbHost + ":27017/test", function (err, db) {
                 if (err) throw err;
-                //console.log("mdb connection ok");
-                //res.write('db conn ok');
-                //res.end();
                 
                 db.collection('student').find( {} , {"name":1, "major":1, "_id":0} ).sort({"name":1}).toArray(function(err,docs) {
                     if (err) throw err;
