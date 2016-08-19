@@ -3,7 +3,7 @@
     { "name": "Jane",   "major": "Physics", "grades": [90, 80, 70] }, 
     { "name": "Tom",    "major": "Hospitality", "grades": [90, 80, 40] }, 
     { "name": "Ann",    "major": "Comp",    "grades": [15, 20, 40] }, 
-    { "name": "Janet",  "major": "Physics", "grades": [90, 82, 40] }, 
+    { "name": "Janet",  "major": "Physics", "grades": [90, 85, 40] }, 
     { "name": "Kim",    "major": "Law",    "grades": [90, 80, 40] }, 
     { "name": "Paul",   "major": "HR",    "grades": [90, 80, 40] }
 ]
