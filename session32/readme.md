@@ -1,6 +1,6 @@
-NPM command to show what external modules we have installed:
+NPM command to show what external modules are installed:
 
-npm list --depth 0
+`npm list --depth 0`  gives:
 
 /home/ubuntu/workspace
 
