@@ -4,6 +4,8 @@ NPM command to show what external modules are installed:
 
 Gives, for example:
 
-```/home/ubuntu/workspace
+```
+/home/ubuntu/workspace
 ├── mongodb@2.2.6
-└── nodemon@1.10.0```
+└── nodemon@1.10.0
+```
