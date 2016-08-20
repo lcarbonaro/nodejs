@@ -1,6 +1,9 @@
 $(document).ready(function(){
     
-    $.get('http://example-lcarbonaro.c9users.io/data', function(resp){        
+    // change this to your own server address
+    var serverUrl = 'http://example-lcarbonaro.c9users.io';  
+    
+    $.get( serverUrl + '/data', function(resp){        
         
         var data = JSON.parse(resp);
         

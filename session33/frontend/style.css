@@ -1,0 +1,14 @@
+li, option, select {
+    font-size: 1.5em;
+}
+
+div#content {
+	float: left;
+}
+
+div#content2 {
+	display: inline;
+	float: left;
+	margin-left: 2em;
+	margin-top: 2em;
+}
