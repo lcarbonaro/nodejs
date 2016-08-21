@@ -1,4 +1,4 @@
-NPM command to show what external modules are installed:
+NPM command `npm list` shows what external modules are installed.
 
 For example `npm list --depth 0` gives:
 
