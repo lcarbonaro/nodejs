@@ -9,6 +9,5 @@ div#content {
 div#content2 {
 	display: inline;
 	float: left;
-	margin-left: 2em;
-	margin-top: 2em;
+	margin-left: 50px;
 }
