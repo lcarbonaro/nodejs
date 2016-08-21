@@ -1,6 +1,9 @@
+Notes
+-----
+
 NPM command `npm list` shows what external modules are installed.
 
-For example `npm list --depth 0` gives:
+For example, `npm list --depth 0` gives:
 
 ```
 /home/ubuntu/workspace
@@ -8,7 +11,8 @@ For example `npm list --depth 0` gives:
 └── nodemon@1.10.0
 ```
 
-References & Resources:
+References & Resources
+----------------------
 
 * [Express API docs](http://expressjs.com/en/4x/api.html)
 * [MongoDB API docs](http://mongodb.github.io/node-mongodb-native/2.2/api/)
