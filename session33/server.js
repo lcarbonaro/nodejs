@@ -44,7 +44,7 @@ server.get('/majors', function(req, res) {
         // distinct() method - https://mongodb.github.io/node-mongodb-native/api-generated/collection.html#distinct
         coll.distinct('major', function(err, docs) {
             if (err) throw err;
-            res.json(docs);
+            res.json(docs.sort());   // simple array sort
             dbConn.close(); 
         });
 
