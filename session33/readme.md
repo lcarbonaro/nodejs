@@ -1,7 +1,7 @@
 This example illustrates:
 
 - Express to simplify routing logic, including passing in parameters as part of the route
-- MongoDB query and projection in find() mthod; cursors; sorting; querying distinct values
+- MongoDB query and projection in find() method; cursors; sorting; querying distinct values
 - jQuery to do AJAX calls, build HTML elements on-the-fly
 
 Notes
