@@ -1,0 +1,13 @@
+li, option, select, div, button, input, span {
+    font-size: 1.5em;
+}
+
+div#content {
+	float: left;
+}
+
+div#content2, div#content3 {
+	display: inline;
+	float: left;
+	margin-left: 50px;
+}

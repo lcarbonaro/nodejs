@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>example</title>
+	
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div id="content"></div>
+
+	<div id="content2"></div>
+
+	<div id="content3"></div>
+
+	
+	<template id="tmpForm">
+		<form id="frmUpdate">
+			<input type="hidden" name="hdnId" value="{{_id}}">
+			Name:{{name}}<br/>
+			Major:{{major}}<br/>
+			Grades:{{grades}}  
+			<input type="number" name="inpGrade"  />
+			<button id="btnUpdate">Update</button>
+		</form>
+	</template>
+
+	
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<!-- Mustache templating library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="script.js"></script>
+</body>
+</html>
