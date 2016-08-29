@@ -67,11 +67,7 @@ $(document).ready(function(){
     });
 
 
-    $('div#content3').on('click','button#btnUpdate', function(e){
-
-    	// need this to prevent the default browser action on submitting a form, 
-    	// which seemingly is to refresh the page without doing anything
-    	e.preventDefault();  
+    $('div#content3').on('click','button#btnUpdate', function(){
 
     	$.get(serverUrl+'/update', $('form#frmUpdate').serializeArray(), function(resp){
 
@@ -81,6 +77,8 @@ $(document).ready(function(){
     		}
 
     	});
+    	
+    	return false; 
 
     });
 
