@@ -56,7 +56,7 @@ $(document).ready(function(){
     	$.get(serverUrl+'/student/'+studentId, function(resp){
 
             // https://github.com/janl/mustache.js
-    		var rendered = Mustache.render( $('template#tmpForm').html() , rec );
+    		var rendered = Mustache.render( $('template#tmpForm').html() , resp );
 
     		$('div#content3').html(rendered);
 
