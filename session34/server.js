@@ -71,13 +71,12 @@ server.get('/student/:id', function(req,res){
         var coll = dbConn.collection('student');
         var query = { "_id" : new ObjectId(studentId) }
         var proj = {};
-        var cursor = coll.find(query, proj);
-        cursor.sort({ "name": 1 });
-        cursor.toArray(function(err, docs) {
+        coll.findOne(query, proj, function(err,doc){
             if (err) throw err;
-            res.json(docs);
+            res.json(doc);
             dbConn.close();
         });
+       
     });
     
 });

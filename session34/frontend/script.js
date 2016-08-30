@@ -55,8 +55,6 @@ $(document).ready(function(){
 
     	$.get(serverUrl+'/student/'+studentId, function(resp){
 
-    		var rec = resp[0];  // resp will be array of one record
-
             // https://github.com/janl/mustache.js
     		var rendered = Mustache.render( $('template#tmpForm').html() , rec );
 
