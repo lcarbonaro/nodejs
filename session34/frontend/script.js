@@ -73,7 +73,7 @@ $(document).ready(function(){
 
     		if(resp.ok===1){
     			$('div#content3').html('<span>Updated successfully!</span>')
-    			$('div#content3 span').fadeOut(3000);
+    			$('div#content3 span').fadeOut(2000);
     		}
 
     	});
