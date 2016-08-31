@@ -8,11 +8,21 @@ Notes
 -----
 
 Note that not all browsers support the HTML5 `<template>` tag. 
-In such cases try enclosing the template in a `<script>` tag instead. For example:
+
+In such cases try enclosing the template in a `<script>` tag instead. 
+
+For example:
 
 ``` html
 <script id="tmpForm" type="text/template">
-    <!-- same html code snippet here -->
+    <form id="frmUpdate">
+		<input type="hidden" name="hdnId" value="{{_id}}">
+		Name:{{name}}<br/>
+		Major:{{major}}<br/>
+		Grades:{{grades}}  
+		<input type="number" name="inpGrade"  />
+		<input type="button" id="btnUpdate" value="Update" />
+	</form>
 </script>
 ```
 
