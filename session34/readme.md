@@ -4,6 +4,17 @@ This example illustrates:
 - jQuery to do AJAX calls to defined routes; submit form data using serializeArray()
 - HTML5 template element; using the Mustache library to render templates
 
+Notes
+-----
+
+Note that not all browsers support the HTML5 `<template>` tag. 
+In such cases try enclosing the template in a `<script>` tag instead. For example:
+
+``` html
+<script id="tmpForm" type="text/template">
+    <!-- same html code snippet here -->
+</script>
+```
 
 References & Resources
 ----------------------
