@@ -7,10 +7,8 @@ This example illustrates:
 Notes
 -----
 
-Note that not all browsers support the HTML5 `<template>` tag. 
-
-In such cases try enclosing the template in a `<script>` tag instead. 
-
+Note that not all browsers support the HTML5 `<template>` tag.   
+In such cases try enclosing the template in a `<script>` tag instead.   
 For example:
 
 ``` html
