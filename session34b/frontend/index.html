@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <title>title</title>
+
+    </head>
+    <body>
+        <div id="content"></div>
+
+        <script id="tmpForm" type="template">
+            <form id="frmUpdate" >
+                <input type="hidden" name="hdnId" value="{{_id}}"/>
+                Name:{{name}}<br/>
+                Major:{{major}}<br/>
+                FullTime:<input type="checkbox" name="chkFullTime" value="1" {{#fulltime}}checked="checked"{{/fulltime}}  /><br/>
+                Resides On Campus:
+                {{#oncampus.radio}}
+                    <input type="radio" name="radOC" value="{{val}}" {{#sel}}checked="checked"{{/sel}} />{{txt}}
+                {{/oncampus.radio}}
+                <br/>
+                Likes:
+                <select name="selLikes">
+                    {{#likes.options}}
+                    <option value="{{val}}" {{#sel}}selected="selected"{{/sel}} >{{txt}}</option>
+                    {{/likes.options}}
+                </select></br>
+                Grades:{{grades}}
+                <input type="number" name="inpGrade" />
+                <input type="button" id="btnUpdate" value="Update" />
+            </form>
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
