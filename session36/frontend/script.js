@@ -34,7 +34,6 @@ $(document).ready(function() {
     $.get('http://mapexample-lcarbonaro.c9users.io/', function(resp){
        map.data.addGeoJson(resp);
        map.data.setStyle(function(feature) {
-           //console.log(feature);
            return {
                "title": feature.getProperty('LANDMARKNA'),
                "icon": {
