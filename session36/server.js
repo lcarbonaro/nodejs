@@ -18,6 +18,7 @@ server.get('/', function(req,res){
         var coll = dbConn.collection('lm');
         
         var query = { 
+            "properties.TYPEDESC": "PARKS",
             "geometry" : { 
                 "$nearSphere" : { 
                     "$geometry" : { 
