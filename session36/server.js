@@ -25,7 +25,7 @@ server.get('/', function(req,res){
                         "type" : "Point" ,
                         "coordinates" : [ -79.6436414, 43.5875534 ] 
                     } ,
-                    "$maxDistance" : 200
+                    "$maxDistance" : 500
                 } 
             } 
         };
