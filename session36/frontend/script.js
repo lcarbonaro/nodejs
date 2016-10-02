@@ -36,7 +36,7 @@ $(document).ready(function() {
        map.data.setStyle(function(feature) {
            //console.log(feature);
            return {
-               "title": feature.f.LANDMARKNA,
+               "title": feature.getProperty('LANDMARKNA'),
                "icon": {
                    "path": google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
                    "scale": 5,
