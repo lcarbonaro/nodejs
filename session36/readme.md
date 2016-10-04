@@ -18,7 +18,7 @@ To set up the landmarks collection in your own database:
 5. Open a MongoDB shell prompt and type in: `db.lm.count()`
 6. Above should give 2179, the number of records in the database
 7. At the same MongoDB shell prompt: `db.lm.createIndex( { "geometry" : "2dsphere" } )`
-8. This index is required for the geospatial queries, e.g. `$nearSphere`
+8. You must have this index for geospatial queries to work, e.g. `$nearSphere`
 
 
 References & Resources
