@@ -24,9 +24,9 @@ To set up the landmarks collection in your own database:
 References & Resources
 ----------------------
 
-* [Google Maps API](https://developers.google.com/maps/documentation/javascript/reference)
-* [GeoJSON Spec](http://geojson.org)
-* [geojson.io](http://geojson.io)
+* [Google Maps API docs](https://developers.google.com/maps/documentation/javascript/reference)
+* [geojson.org: GeoJSON Spec](http://geojson.org)
+* [geojson.io: Utility to build geojson datasets interactively](http://geojson.io)
 * [MongoDB geospatial querying](https://docs.mongodb.com/manual/reference/operator/query-geospatial/)
 * [Open Data Mississauga - Landmarks Dataset](http://data.mississauga.ca/datasets/0ef6b00cb09546caa8e9325787916a9a_0)
-* [Ogre: Shapefile-to-geojson online conversion utility](https://ogre.adc4gis.com/)
+* [Ogre: shapefile-to-geojson online conversion utility](https://ogre.adc4gis.com/)
