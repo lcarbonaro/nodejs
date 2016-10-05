@@ -11,7 +11,7 @@ Notes
 
 To set up the landmarks collection in your own database:
 
-1. Download the file `landmarks.geojson`
+1. Download the file `landmarks.geojson` from this repo; it's about 1.7Mb
 2. Make sure MongoDB server is started on your machine
 3. In a separate command prompt: `mongoimport --db test --collection lm --file landmarks.geojson`
 4. Result from import should say: `imported 2179 documents`
