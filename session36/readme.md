@@ -29,3 +29,4 @@ References & Resources
 * [geojson.io](http://geojson.io)
 * [MongoDB geospatial querying](https://docs.mongodb.com/manual/reference/operator/query-geospatial/)
 * [Open Data Mississauga - Landmarks Dataset](http://data.mississauga.ca/datasets/0ef6b00cb09546caa8e9325787916a9a_0)
+* [Ogre: Shapefile-to-geojson online conversion utility](https://ogre.adc4gis.com/)
