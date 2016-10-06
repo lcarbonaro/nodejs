@@ -17,6 +17,9 @@ server.get('/', function(req,res){
         if (err) throw err;
         var coll = dbConn.collection('lm');
         
+        // this filter has two conditions on fields 
+        // "properties.TYPEDESC" and "geometry"
+        // implicit 'and' (as opposed to 'or')
         var query = { 
             "properties.TYPEDESC": "PARKS",
             "geometry" : { 
@@ -29,6 +32,10 @@ server.get('/', function(req,res){
                 } 
             } 
         };
+        
+        // note re:regular expression operator
+        // above can use something like: "properties.TYPEDESC" : { "$regex": /^police/i } ,
+        // matches any TYPDESC that starts with the letters 'police' case insensitive
         
         var proj = {"_id":0};
         
