@@ -1,6 +1,10 @@
 var express = require('express');
-
 var mongodb = require('mongodb').MongoClient;
+
+// above assumes npm modules 'express' and 'mongodb' are installed
+// can find out out using command 'npm list --depth 0'
+
+
 var dbHost = process.env.IP || '127.0.0.1';
 var connStr = 'mongodb://' + dbHost + ':27017/test';
 
