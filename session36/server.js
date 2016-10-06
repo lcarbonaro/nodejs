@@ -39,7 +39,7 @@ server.get('/', function(req,res){
         
         // note re:regular expression operator
         // above can use something like: "properties.TYPEDESC" : { "$regex": /^police/i } ,
-        // matches any TYPDESC that starts with the letters 'police' case insensitive
+        // matches any TYPEDESC that starts with the letters 'police', case insensitive
         
         var proj = {"_id":0};
         
