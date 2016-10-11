@@ -31,7 +31,7 @@ $(document).ready(function() {
         "map": map
     });
 
-    $.get('http://mapexample-lcarbonaro.c9users.io/', function(resp){
+    $.get('http://use-own-server-url-here/', function(resp){
        map.data.addGeoJson(resp);
        map.data.setStyle(function(feature) {
            return {
