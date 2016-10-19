@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>More Mapping Queries with Mongo</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- main html content starts here -->
+
+    <div class="container">
+        <div class="page-header">
+            <h1>More Mapping Queries with MongoDB</h1>
+        </div>
+
+        <div id="divSearch">
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon">Centre Location</span>
+                <input type="text" class="form-control input-lg" id="txtLocation" placeholder="Enter your location..." />
+                <span class="input-group-btn">
+                      <button class="btn btn-primary btn-lg" id="btnShowMap">Show Map</button>
+                  </span>
+            </div>            
+
+        </div>  <!-- divSearch -->
+
+        <div id="divResults">
+            <div id="divMap"></div>
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Bootbox JS library -->
+    <script src="https://cdn.jsdelivr.net/bootbox/4.4.0/bootbox.min.js"></script>
+
+    <!-- Google Maps API (library) -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <!-- script tag for custom JS goes here -->
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>

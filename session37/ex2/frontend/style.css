@@ -1,0 +1,12 @@
+#divResults {
+    padding-top: 15px;
+}
+
+#divMap {
+    width: 1200px;
+    height: 750px;
+}
+
+.bootbox-body {
+    font-size: 1.5em;
+}
